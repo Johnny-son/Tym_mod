@@ -1,6 +1,6 @@
 # 构建甜玉米
 
-直接玩可以下载 [Releases](https://github.com/Johnny-son/Tym_mod/releases) 中的 `SweetCorn-1.1.0.zip`，把里面的 `FriendSpire` 文件夹解压到游戏的 `mods` 目录。游戏内同时启用甜玉米和 BaseLib。
+直接玩可以下载 [Releases](https://github.com/Johnny-son/Tym_mod/releases) 中的 `SweetCorn-1.1.1.zip`，把里面的 `FriendSpire` 文件夹解压到游戏的 `mods` 目录。游戏内同时启用甜玉米和 BaseLib。
 
 ## 在本地开发
 
