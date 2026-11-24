@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/merchant/characters/ironclad_merchant.tscn" id="1"]
+[ext_resource type="Texture2D" path="res://FriendSpire/images/rest.jpg" id="2"]
+
+[node name="SweetCornShop" instance=ExtResource("1")]
+
+[node name="SpineSprite" parent="." index="0"]
+visible = false
+
+[node name="Visuals" type="Sprite2D" parent="."]
+texture = ExtResource("2")
+position = Vector2(0, -120)

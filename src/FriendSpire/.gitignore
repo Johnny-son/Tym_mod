@@ -1,0 +1,4 @@
+bin/
+obj/
+assets/.godot/
+.DS_Store

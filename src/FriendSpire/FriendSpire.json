@@ -1,0 +1,17 @@
+{
+  "id": "FriendSpire",
+  "name": "甜玉米 · Sweet Corn",
+  "author": "TYM",
+  "description": "185 男神，四种形态，20 种专属卡牌。",
+  "version": "1.0.0",
+  "min_game_version": "0.113.1",
+  "has_pck": true,
+  "has_dll": true,
+  "affects_gameplay": true,
+  "dependencies": [
+    {
+      "id": "BaseLib",
+      "min_version": "3.4.8"
+    }
+  ]
+}
