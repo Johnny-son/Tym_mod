@@ -1,10 +1,10 @@
 # 构建甜玉米
 
-直接玩可以下载 [Releases](https://github.com/Johnny-son/Tym_mod/releases) 中的 `SweetCorn-1.0.0.zip`，把里面的 `FriendSpire` 文件夹解压到游戏的 `mods` 目录。游戏内同时启用甜玉米和 BaseLib。
+直接玩可以下载 [Releases](https://github.com/Johnny-son/Tym_mod/releases) 中的 `SweetCorn-1.1.0.zip`，把里面的 `FriendSpire` 文件夹解压到游戏的 `mods` 目录。游戏内同时启用甜玉米和 BaseLib。
 
 ## 在本地开发
 
-v1.0 使用 .NET 9 SDK、游戏 v0.113.1（Steam 的 `public-beta` 分支）、BaseLib 3.4.8，以及与游戏配套的 MegaDot 4.5.1。卡牌数值和升级在 `src/FriendSpire/src/Cards.cs`，形态结算在 `Stances.cs`，角色及遗物在 `SweetCorn.cs`。修改效果时，同步更新 `assets/FriendSpire/localization/` 下的中英文描述。
+v1.1 使用 .NET 9 SDK、游戏 v0.113.1（Steam 的 `public-beta` 分支）、BaseLib 3.4.8，以及与游戏配套的 MegaDot 4.5.1。卡牌数值和升级在 `src/FriendSpire/src/Cards.cs`，形态结算在 `Stances.cs`，角色及遗物在 `SweetCorn.cs`。修改效果时，同步更新 `assets/FriendSpire/localization/` 下的中英文描述。
 
 1. 进入仓库的 `src/FriendSpire` 目录。
 2. 设置环境变量 `Sts2DataDir`，值为本机游戏中含有 `sts2.dll`、`GodotSharp.dll` 和 `0Harmony.dll` 的目录。设置 `BaseLibDir` 为含有 `BaseLib.dll` 的目录。

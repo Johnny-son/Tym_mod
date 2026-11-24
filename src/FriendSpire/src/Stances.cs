@@ -67,15 +67,19 @@ public abstract class StancePower(Form form, string icon) : CornPower(icon)
 {
     public Form Form => form;
     public override PowerStackType StackType => PowerStackType.Single;
-
 }
 
 public class Labor() : StancePower(Form.Labor, "wrath")
 {
     public override decimal ModifyDamageMultiplicative(Creature? target, decimal amount,
-        ValueProp props, Creature? dealer, CardModel? cardSource, CardPlay? cardPlay) =>
-        dealer == Owner && cardSource?.Type == CardType.Attack && props.IsPoweredAttack_() ? 2 : 1;
+        ValueProp props, Creature? dealer, CardModel? cardSource, CardPlay? cardPlay)
+    {
+        if (!props.IsPoweredAttack_()) return 1;
+        if (target == Owner && dealer?.Side == CombatSide.Enemy) return 4;
+        return dealer == Owner && cardSource?.Type == CardType.Attack ? 2 : 1;
+    }
 }
+
 public class Emo() : StancePower(Form.Emo, "calm");
 public class Sigma() : StancePower(Form.Sigma, "divinity")
 {
